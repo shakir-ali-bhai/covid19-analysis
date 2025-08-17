@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>COVID-19 x Happiness – Summary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 24px; line-height: 1.5; }
+    h1, h2 { margin: 0.2em 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    figure { margin: 0; padding: 12px; border: 1px solid #ddd; border-radius: 10px; }
+    img { max-width: 100%; height: auto; display: block; }
+    .muted { color: #666; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h1>COVID-19 x World Happiness — Visual Summary</h1>
+  <p class="muted">Auto-generated quick view. See the Jupyter Notebook for full analysis.</p>
+  <div class="grid">
+    <figure>
+      <img src="figures/top10_total_cases.png" alt="Top 10 by Total Cases">
+      <figcaption>Top 10 Countries by Total Cases</figcaption>
+    </figure>
+    <figure>
+      <img src="figures/top10_total_deaths.png" alt="Top 10 by Total Deaths">
+      <figcaption>Top 10 Countries by Total Deaths</figcaption>
+    </figure>
+    <figure>
+      <img src="figures/scatter_happiness_vs_cfr.png" alt="Happiness vs CFR">
+      <figcaption>Happiness Score vs CFR</figcaption>
+    </figure>
+    <figure>
+      <img src="figures/scatter_gdp_vs_logdeaths.png" alt="GDP vs log deaths">
+      <figcaption>GDP per Capita vs log10(Total Deaths)</figcaption>
+    </figure>
+    <figure style="grid-column: 1 / -1;">
+      <img src="figures/correlation_heatmap.png" alt="Correlation Heatmap">
+      <figcaption>Correlation Heatmap (Pearson)</figcaption>
+    </figure>
+  </div>
+</body>
+</html>
